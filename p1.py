@@ -14,6 +14,10 @@ def getTitle(url):
         return None
     return title
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 128ae1b (Initial commit)
 #############main############
 title = getTitle('http://pythonscraping.com/pages/page1.html')
 
