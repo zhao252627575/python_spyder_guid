@@ -7,17 +7,11 @@ def getTitle(url):
         html = urlopen(url)
     except HTTPError as e:
         return None
-    try:
-        bs = BeautifulSoup(html.read(), 'html.parser')
         title = bs.body.h1
     except AttributeError as e:
         return None
     return title
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 128ae1b (Initial commit)
 #############main############
 title = getTitle('http://pythonscraping.com/pages/page1.html')
 
